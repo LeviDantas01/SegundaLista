@@ -10,9 +10,9 @@ public class Velho extends Imovel{
         this.desconto = desconto;
     }
     
-    public void mostraDesconto(){
+    public double mostraDesconto(){
         double calculaDesconto = this.getPreco() - this.desconto;
-        System.out.println("O valor do imovel com desconto é R$"+ calculaDesconto);
+        return calculaDesconto;
     }
     
     

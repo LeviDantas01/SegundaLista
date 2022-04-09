@@ -11,8 +11,8 @@ public class Novo extends Imovel{
         this.adicionalPreco = adicionalPreco;
     }
     
-    public void mostraNovoPreco(){
-        this.adicionalPreco += this.getPreco() + this.adicionalPreco;
-        System.out.println("O preco do imovel com um adicional custa R$" + this.adicionalPreco);
+    public double mostraNovoPreco(){
+        this.adicionalPreco = this.getPreco() + this.adicionalPreco;
+        return this.adicionalPreco;
     }
 }

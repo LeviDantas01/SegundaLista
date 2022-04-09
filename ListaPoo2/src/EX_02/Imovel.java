@@ -24,8 +24,8 @@ public class Imovel {
     public String mostraEndereco(){
         return this.endereco;
     }
-    public void mostraPreco(){
-        System.out.println("O valor do imovel é R$" + this.preco);
+    public double mostraPreco(){
+        return this.preco;
         
     }
     
